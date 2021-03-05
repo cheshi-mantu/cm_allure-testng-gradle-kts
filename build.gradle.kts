@@ -48,11 +48,12 @@ tasks.withType(Test::class) {
 repositories {
     mavenCentral()
     mavenLocal()
+    maven { url = "https://dl.bintray.com/qameta/maven-unstable" }
 }
 
 dependencies {
     testImplementation("io.qameta.allure:allure-java-commons:$allureVersion")
-
+    testImplementation ("io.qameta.allure:allure-ee-testng:3.38.0")
     testImplementation("org.testng:testng:$testngVersion")
     testImplementation("org.slf4j:slf4j-simple:1.7.30")
 }
