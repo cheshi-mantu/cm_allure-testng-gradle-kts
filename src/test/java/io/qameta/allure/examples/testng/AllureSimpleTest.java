@@ -1,5 +1,6 @@
 package io.qameta.allure.examples.testng;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.qameta.allure.model.Status;
 import org.testng.annotations.Test;
@@ -26,6 +27,7 @@ public class AllureSimpleTest {
 
     @Test(enabled = false)
 //    @Test(description = "This will be disabled")
+    @Description("This is disabled test")
     public void allureSimpleTestDisabled() {
         step("Must not appear anywhere");
         step("Simple step with status", Status.PASSED);
