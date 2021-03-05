@@ -24,8 +24,8 @@ public class AllureSimpleTest {
         step("Simple step inside test method");
     }
 
-//    @Test(enabled = false)
-    @Test(description = "This will be disabled")
+    @Test(enabled = false)
+//    @Test(description = "This will be disabled")
     public void allureSimpleTestDisabled() {
         step("Must not appear anywhere");
         step("Simple step with status", Status.PASSED);
