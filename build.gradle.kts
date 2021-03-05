@@ -46,9 +46,10 @@ tasks.withType(Test::class) {
 }
 
 repositories {
+    maven ( url = "https://dl.bintray.com/qameta/maven-unstable" )
     mavenCentral()
     mavenLocal()
-    maven { url = "https://dl.bintray.com/qameta/maven-unstable" }
+
 }
 
 dependencies {
